@@ -1,0 +1,106 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+.wrapper {
+    padding: 20px;
+}
+
+.head {
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.desc {
+    padding: 10px;
+    display: none;
+}
+
+.subhead {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #150591;
+    border: 1px solid black;
+    color: white;
+    position: relative;
+}
+.subhead.active {
+    display: block;
+}
+.subhead.active::after{
+    display: none;
+}
+
+
+.about {
+    padding: 10px;
+    display: none;
+}
+.about.active{display: block;}
+
+.subhead::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    right: 10px;
+    background-color: white;
+}
+.subhead::after{content: "";
+position: absolute;
+width: 2px;
+height: 20px;
+top:11px;
+right: 19px;
+background-color: white;}
+
+.tabs h2 {
+    text-align: center;
+    font-weight: 500px;
+    margin: 10px;
+    ;
+}
+
+.companynames ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: black
+}
+
+.companynames li {
+    list-style: none;
+    padding: 10px;
+    ;
+    border: 1px solid whitesmoke;
+    color: white;
+    margin: 10px;
+}
+
+.companynames li.active {
+    display: block;
+    background-color: red;
+}
+
+
+.models li {
+    list-style: none;
+    padding: 20px;
+    border: 5px solid black;
+    height: 100px;
+    display: none;
+}
+
+.models li.show {
+    display: block;
+}
